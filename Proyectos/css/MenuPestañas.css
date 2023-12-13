@@ -1,0 +1,62 @@
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.tabs-menu {
+    width: 80%;
+    height: 25px;
+    align-items: center;
+    display: flex;
+    justify-content: space-around;
+    position: relative;
+    background-color: #DDD;
+    border-radius: 30px;
+    
+}
+.tabs-menu input[type="radio"]{
+    display: none;
+}
+
+.tabs-menu label:hover{
+    color:white;
+}
+
+.tabs-menu label {
+    position: relative;
+    z-index: 1;
+}
+
+.tabs-menu input[type="radio"]:checked + label {
+    color: white;
+}
+
+.tab-bg-hover {
+    position: absolute;
+    background: linear-gradient(90deg, rgba(255,0,0,0.6993172268907564) 0%, rgba(155,7,7,0.9738270308123249) 60%, rgba(121,9,9,0.7805497198879552) 100%);
+    height: 20px;
+    width: 23%;
+    border-radius: 30px;
+    transition: left 0.8s;
+}
+
+#tab-1:checked ~ .tab-bg-hover {
+    left:calc(1% + 0%);
+}
+
+#tab-2:checked ~ .tab-bg-hover {
+    left:calc(1%  + 25%);
+}
+
+#tab-3:checked ~ .tab-bg-hover {
+    left:calc(1%  + 50%);
+}
+
+#tab-4:checked ~ .tab-bg-hover {
+    left:calc(1%  + 75%);
+}

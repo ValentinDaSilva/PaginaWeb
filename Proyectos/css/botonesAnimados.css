@@ -1,0 +1,57 @@
+body{
+    margin:0;
+    padding: 0;
+    box-sizing: border-box;
+    height: 100vh;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    align-content: center;
+}
+
+.btn {
+    margin: 10px;
+    position:relative;
+    border:none;
+    border-radius: .25rem;
+    padding:.2rem;
+    width: 15rem;
+    height: 2.5rem;
+    font-size: 1.25rem;
+    font-weight: bold;
+    cursor:pointer;
+    overflow: hidden;
+    box-shadow: .25rem .25rem .5rem .25rem rgba(0,0,0,0.3);
+    transition: background-color 5s;
+}
+
+.btn::after{
+    content: "AA";
+    background-color: red;
+    position:absolute;
+    bottom:0;
+    height: 2px;
+    right: 0;
+    width: 0;
+    transition: width 0.5s,left 0.5s, right 0.5s;
+}
+.anim-bottom:hover::after{
+    width: 100%;
+}
+
+.left::after{
+    left: 0;
+}
+.right::after{
+    right: 0;
+}
+
+.center::after{
+    left: 50%;
+}
+
+.center:hover::after{
+    left: 0;
+}
+

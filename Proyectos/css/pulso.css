@@ -1,0 +1,30 @@
+.corazon-conteiner{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 90vh;
+}
+
+.corazon {   
+    font-size: 50px;
+    cursor:pointer;
+    &:hover {
+        animation-name: pulso;
+        animation-duration: 0.5s;
+        animation-iteration-count: infinite;
+        animation-fill-mode: both;
+
+    }
+}
+
+@keyframes pulso {
+    0%{
+        transform: scale(1.1);
+    }
+    50%{
+        transform: scale(0.8);
+    }
+    0%{
+        transform: scale(1);
+    }
+}

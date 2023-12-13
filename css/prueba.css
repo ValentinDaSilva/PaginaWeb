@@ -1,0 +1,75 @@
+.Encuedre-Foto-Personal,.Encuedre-Foto-Personal2 {
+    width: 300px;
+    height: 300px; 
+    margin-top: 10px;
+    margin-left: 2vw;
+    margin-right: 2vw;
+    display: flex;
+    transition: width 1s;
+    
+}
+.Encuedre-Foto-Personal2{
+    margin-top: 50px;
+}
+.nombre1 {
+    font-size: 30px;
+    font-family: "Anton";
+    
+}
+
+body {
+    align-items: center;
+    box-sizing: border-box;
+    background-color: bisque;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.Foto-Personal,.Foto-Personal2 {
+    border-radius: 150px;
+    animation: slideFromTop 1s ease forwards;
+}
+
+.Encuedre-Foto-Personal:hover,.Encuedre-Foto-Personal2:hover {
+    width: 98vw;
+    height: 300px; 
+    transition: width 0.8s ease 0s;
+}
+
+.Encuedre-Foto-Personal:hover img, .Encuedre-Foto-Personal2:hover img{
+    border-radius: 0px;
+    transition: border-radius 1.3s;
+}
+    
+.texto h1 , .texto p{
+    margin: 10px auto;
+    opacity: 0;
+    text-align: center;
+}
+.texto{
+    width: calc(100% - 300px);
+    height: 280px;
+    display: flex;
+    flex-direction: column;
+    padding:10px;
+    border-left: 0px;
+}
+
+.Encuedre-Foto-Personal:hover h1, .Encuedre-Foto-Personal:hover p, .Encuedre-Foto-Personal2:hover h1, .Encuedre-Foto-Personal2:hover p{
+    opacity: 1;
+    transition: opacity 3s;
+}
+.Encuedre-Foto-Personal:hover .texto, .Encuedre-Foto-Personal2:hover .texto{
+    border: 2px solid black;
+}
+
+@keyframes slideFromTop {
+    from {
+        transform: translatex(+800%); 
+    }
+    to {
+        transform: translateX(0); 
+    }
+}
