@@ -38,6 +38,7 @@ body{
 
 .tab-bg-hover {
     position: absolute;
+    left: 10px;
     background: linear-gradient(90deg, rgba(255,0,0,0.6993172268907564) 0%, rgba(155,7,7,0.9738270308123249) 60%, rgba(121,9,9,0.7805497198879552) 100%);
     height: 20px;
     width: 23%;
