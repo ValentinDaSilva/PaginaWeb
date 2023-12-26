@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Menu Hamburguesa</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/hamburgers/1.2.1/hamburgers.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="menuHamburguesa.css">
+</head>
+<body>
+    <header class="header">
+        <h1>Ejercicios del DOM</h1>
+    </header>
+    <button class="panel-btn hamburger hamburger--vortex " type="button">
+    <span class="hamburger-box">
+        <span class="hamburger-inner"></span>
+    </span>
+    </button>
+    <aside class="panel">
+      <nav class="menu">
+         <a href="#seccion1">Reloj Digital y Alarma Sonora</a>
+         <a href="#seccion2">Eventos de Teclado</a>
+         <a href="#seccion3">Seccion 3</a>
+         <a href="#seccion4">Seccion 4</a>
+         <a href="#seccion5">Seccion 5</a>
+      </nav>
+    </aside>
+    <main>
+        <section id="seccion1" class="section">
+            <h1>Reloj Digital y Alarma Sonora</h1>
+            <div id="reloj"></div>
+            <button id="activar-reloj">Activar Reloj</button>
+            <button id="desactivar-reloj">Detener Reloj</button>
+            <button id="activar-alarma">Iniciar Alarma</button>
+            <button id="desactivar-alarma">Detener Alarma</button>
+        </section>
+        <section id="seccion2" class="section">
+            <h1>Eventos de Teclado</h1>
+            <article class="stage">
+                <div class="ball"></div>
+            </article>
+            
+        </section>
+        <section id="seccion3" class="section">
+            <h1>Seccion 3</h1>
+        </section>
+        <section id="seccion4" class="section">
+            <h1>Seccion 4</h1>
+        </section>
+        <section id="seccion5" class="section">
+            <h1>Seccion 5</h1>
+        </section>
+    </main>
+    <script src="index.js" type="module"></script>
+</body>
+</html>
