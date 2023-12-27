@@ -20,7 +20,7 @@
       <nav class="menu">
          <a href="#seccion1">Reloj Digital y Alarma Sonora</a>
          <a href="#seccion2">Eventos de Teclado</a>
-         <a href="#seccion3">Seccion 3</a>
+         <a href="#seccion3">Contador de Dias Faltantes</a>
          <a href="#seccion4">Seccion 4</a>
          <a href="#seccion5">Seccion 5</a>
       </nav>
@@ -34,15 +34,27 @@
             <button id="activar-alarma">Iniciar Alarma</button>
             <button id="desactivar-alarma">Detener Alarma</button>
         </section>
-        <section id="seccion2" class="section">
+        <section style="position:relative; top:200px" id="seccion2" class="section">
             <h1>Eventos de Teclado</h1>
-            <article class="stage">
+            <article id = "juego" class="stage" tabindex="0">
                 <div class="ball"></div>
             </article>
-            
         </section>
         <section id="seccion3" class="section">
-            <h1>Seccion 3</h1>
+            <h1>Contador de Dias Faltantes</h1>
+            <form id="fechaForm">
+                <label for="dia">Día:</label>
+                <input type="number" id="dia" name="dia" min="1" max="31">
+              
+                <label for="mes">Mes:</label>
+                <input type="number" id="mes" name="mes" min="1" max="12">
+              
+                <label for="anio">Año:</label>
+                <input type="number" id="anio" name="anio">
+              
+                <button id="crearFecha">Crear Fecha</button>
+              </form>
+              <div class="diferencia"></div>
         </section>
         <section id="seccion4" class="section">
             <h1>Seccion 4</h1>
@@ -50,7 +62,10 @@
         <section id="seccion5" class="section">
             <h1>Seccion 5</h1>
         </section>
-    </main>
-    <script src="index.js" type="module"></script>
+    </main> 
+    <!-- 🌞 🌜 -->
+    <button class="scroll-top-btn hidden">&#11014;</button>
+    <button data-emoji = "false" class="button-dar-mode"></button>
+    <!-- <script src="index.js" type="module"></script> -->
 </body>
 </html>
