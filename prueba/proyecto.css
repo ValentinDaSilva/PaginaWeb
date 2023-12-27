@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@1&display=swap');
 
 :root{
     --main-font: sans-serif;
@@ -286,4 +286,17 @@ header h1 {
     display: flex;
     justify-content: center;
     align-items: center;
+    font-size: 1.3rem;
+    font-family: 'DM Serif Display', serif; /* Aplica la fuente DM Serif Display a los títulos */
+    font-style: italic;
+}
+
+input[name="buscador"]{
+    width:300px;
+    height: 30px;
+    margin-bottom: 20px;
+}
+
+input[name="buscador"]::placeholder{
+   text-align: center;
 }
